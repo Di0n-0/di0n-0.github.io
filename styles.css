@@ -108,9 +108,3 @@ ul li {
 .feature ul {
   margin-right: 10px;
 }
-
-@media (max-width: 768px) {
-  .header-image {
-    display: none; /* Hide the header image on smaller screens */
-  }
-}
