@@ -4,7 +4,7 @@ html{
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #b3b3b3;
+  background-color: #78c0a7;
   margin: 0;
   padding: 0;
   max-width: 100%;
@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background-color: #5b433e;
+  background-color: #00787f;
   padding: 10px;
 }
 
@@ -37,7 +37,7 @@ section {
 }
 
 article {
-  background-color: #cea483;
+  background-color: #7c991f;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -45,7 +45,7 @@ article {
 }
 
 article article {
-  background-color: #ced1ce;
+  background-color: #f6f6ed;;
   padding: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -78,7 +78,7 @@ video {
 }
 
 footer {
-  background-color: #cd6758;
+  background-color: #f7c573;
   color: #fff;
   padding: 20px;
   text-align: center;
