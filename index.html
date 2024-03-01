@@ -10,10 +10,10 @@
   <header>
     <nav class="nav-container">
       <div class="logo-container">
-        <img src="logo_prog_lan.png" alt="Logo">
+        <img src="logo_prog_lan.png" alt="Logo" style = "max-width: 450px;">
       </div>
       <div class="image-container">
-        <img src="logo_axolotl_0.png" alt="Axolotl">
+        <img src="logo_axolotl_0_transparent.png" alt="Axolotl" style = "max-width: 450px;">
       </div>
       <div class="contact-info">
         <a href="https://github.com/Di0n-0" target="_blank">GitHub</a>
@@ -70,7 +70,7 @@
                     <li>Consider the steadfast guitar angle for quality. It is not commanded, but a wise path to follow.</li>
                   </ul>
                 </ul>
-                <img src="moses.jpeg" alt="Moses" style="border: 5px solid #b4d9b8;">
+                <img src="moses.jpeg" alt="Moses" style="border: 5px solid #b4d9b8; max-width: 450px;">
               </div>
             <h3>Contributing</h3>
               <ul>
@@ -108,8 +108,31 @@
       <h1>Updates</h1>
       <article>
         <article>
-          <h2>No new updates...</h2>
-          <p>You'll see them here described once I implement new features. Currently, my hands are full with school.</p>
+          <h2>ARpeggio</h2>
+            <p>Although I was preoccupied with school, I managed to make some progress on ARpeggio. 
+              Admittedly, it did take me quite some time, as the moments I could dedicate to it were scarce and fleeting, akin to breadcrumbs. 
+              This made it challenging to maintain a consistent focus on the project. 
+              Without further ado, allow me to present my vision for ARpeggio, along with the progress I have made thus far and the features I intend to incorporate into the program.</p>
+            <h3>My Vision</h3>
+              <p>In its current state, ARpeggio only allows users to practice pieces that can be analyzed from a video. 
+                However, I aim to enhance the program's capabilities by enabling it to convert guitar tablatures into training data. 
+                To achieve this, there are two crucial aspects that need to be addressed. 
+                Firstly, the program must possess knowledge of every note on the guitar and their corresponding fret positions. 
+                Secondly, it must be equipped with the ability to interpret tablatures and generate the necessary training data. 
+                I have made progress in the first aspect by ensuring that the program is aware of all the possible fret positions associated with different notes. 
+                However, I have yet to establish the linkage between these positions and their corresponding musical notes.</p>
+            <h3>Mapping The Strings And Frets</h3>
+              <div class="feature">
+                <p>Although it is not yet fully complete, I have successfully mapped the strings and frets of the guitar using the principles of analytical geometry 
+                  (a heartfelt thank you to Descartes). 
+                  This mapping allows us to determine the approximate locations where specific notes should be played. 
+                  However, I have yet to implement a one-to-one correspondence between these approximate positions and the corresponding musical notes.
+                  The vidoes on which I conduct the tests of my program belong to <a href="https://www.youtube.com/@ishidagi648"_blank"><b>Tadashi Ishida</b></a>.</p>
+                  <img src="descartes.jpg" alt="Descartes" style="border: 5px solid #b4d9b8; max-width: 450px;">
+                </div>
+                <div style="display: flex; justify-content: center;">
+                  <img src="combined_image.png" alt="Mapping The Strings And Frets" style="border: 5px solid #b4d9b8; width: 1200px;">
+                </div>
         </article>
       </article>
     </section>

@@ -24,8 +24,9 @@ nav {
 
 img {
   width: 100%;
-  max-width: 450px;
+  max-width: 1200px;
   height: auto;
+  margin: 20px;
 }
 
 main {
@@ -78,16 +79,10 @@ video {
 }
 
 footer {
-  background-color: #f7c573;
-  color: #fff;
+  background-color: #ffba4a;
+  color: #000000;
   padding: 20px;
   text-align: center;
-}
-
-div a {
-  color: #fff;
-  text-decoration:underline;
-  margin-right: 10px;
 }
 
 a {
