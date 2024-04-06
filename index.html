@@ -10,10 +10,10 @@
   <header>
     <nav class="nav-container">
       <div class="logo-container">
-        <img src="logo_prog_lan.png" alt="Logo" style = "max-width: 450px;">
+        <img src="assets/logo_prog_lan.png" alt="Logo" style = "max-width: 450px;">
       </div>
       <div class="image-container">
-        <img src="logo_axolotl_0_transparent.png" alt="Axolotl" style = "max-width: 450px;">
+        <img src="assets/logo_axolotl_0_transparent.png" alt="Axolotl" style = "max-width: 450px;">
       </div>
       <div class="contact-info">
         <a href="https://github.com/Di0n-0" target="_blank" style="color: white;">GitHub</a>
@@ -43,7 +43,7 @@
         <article>
           <article>
             <h2>ARpeggio</h2>
-              <video src="video_arpeggio.mp4" controls style="border: 5px solid #b4d9b8;"></video>
+              <video src="assets/video_arpeggio.mp4" controls style="border: 5px solid black;"></video>
               <p>Do you find reading sheet music or tablatures a bit daunting?
                 Well, you're not alone. I'll be honest, I'm not the most consistent player, 
                 and I often go through extended periods without practice. 
@@ -59,18 +59,12 @@
               <p>I'm proud of the progress I've made with ARpeggio, and I can't wait to bring it to you. 
                 Stay tuned for updates on its development and release on my website.</p>
             <h3>Features</h3>
-              <div class="feature">
+              <div style="display: flex; align-items: flex-start;">
                 <ul>
                   <li>Option to only display chosen hand indices</li>
                   <li>Capability to adapt to the rotation of your guitar and to the distance between it and the camera</li>
-                  <li>Capability to process <b>any</b> video and extract its hand landmarks for you to replay on your guitar, as long as <b>The 1 commandment and 2 suggestions</b> are abode</li>
-                  <ul>
-                    <li>Thou shalt film videos from one angle only! No wandering cameras shall be permitted! Let the visuals remain constant, granting thou a sense of stability and coherence!</li>
-                    <li>Embrace divine lighting, consider illuminating thy guitar with radiant brilliance.</li>
-                    <li>Consider the steadfast guitar angle for quality. It is not commanded, but a wise path to follow.</li>
-                  </ul>
+                  <li>Capability to process <b>any</b> video and extract its hand landmarks for you to replay on your guitar
                 </ul>
-                <img src="moses.jpeg" alt="Moses" style="border: 5px solid #b4d9b8; max-width: 450px;">
               </div>
             <h3>Contributing</h3>
               <ul>
@@ -108,8 +102,8 @@
       <h1>Updates</h1>
       <article>
         <article>
-          <h2>1/3/2024</h2>
           <h2>ARpeggio</h2>
+          <h2>1/3/2024</h2>
             <p>Although I was preoccupied with school, I managed to make some progress on ARpeggio. 
               Admittedly, it did take me quite some time, as the moments I could dedicate to it were scarce and fleeting, akin to breadcrumbs. 
               This made it challenging to maintain a consistent focus on the project. 
@@ -122,18 +116,63 @@
                 Secondly, it must be equipped with the ability to interpret tablatures and generate the necessary training data. 
                 I have made progress in the first aspect by ensuring that the program is aware of all the possible fret positions associated with different notes. 
                 However, I have yet to establish the linkage between these positions and their corresponding musical notes.</p>
-            <h3>Mapping The Strings And Frets</h3>
-              <div class="feature">
+            <h3>Mapping The Strings and Frets</h3>
+              <div style="display: flex; align-items: flex-start; justify-content: center;">
                 <p>Although it is not yet fully complete, I have successfully mapped the strings and frets of the guitar using the principles of analytical geometry 
                   (a heartfelt thank you to Descartes). 
                   This mapping allows us to determine the approximate locations where specific notes should be played. 
                   However, I have yet to implement a one-to-one correspondence between these approximate positions and the corresponding musical notes.
                   The vidoes on which I conduct the tests of my program belong to <a href="https://www.youtube.com/@ishidagi648"_blank"><b>Tadashi Ishida</b></a>.</p>
-                  <img src="descartes.jpg" alt="Descartes" style="border: 5px solid #b4d9b8; max-width: 450px;">
+                  <img src="assets/descartes.jpg" alt="Descartes" style="border: 5px solid black; max-width: 450px;">
                 </div>
                 <div style="display: flex; justify-content: center;">
-                  <img src="combined_image.png" alt="Mapping The Strings And Frets" style="border: 5px solid #b4d9b8; max-width: 900px;">
+                  <img src="assets/combined_image.png" alt="Mapping The Strings And Frets" style="border: 5px solid black; max-width: 900px;">
                 </div>
+          <h2>6/4/2024</h2>
+            <p>Again, I was only able to continue the development of the project after a month because of school and other academic affairs. 
+              However, I've managed to make progress despite all of these constraints. The project is nearing its final phases, 
+              and I hope to be able to complete it sometime this summer. Anyway, here's what I have been working on in the last couple of days.
+            </p>
+            <h3>Converting ASCII Tablature to a Format which ARpeggio Can Read</h3>
+            <div style="display: flex; align-items: flex-start; justify-content: center;">
+              <pre>
+                e|--1--1--1-----|--2--------2--|--------2-----|--------------|--------------|
+                B|--------2-----|-----2--1-----|--------------|--------------|--------------|
+                G|--------------|--------3--1--|--------1-----|--------1-----|--3-----------|
+                D|-----3--------|--------------|-----3--3-----|--------------|--------------|
+                A|--3-----------|--4-----------|--------1-----|--------4-----|-----3-----4--|
+                E|-----4-----4--|--4-----------|-----4--4-----|-----------2--|--------------|
+                
+                e|-----2--2--1--|-----------1--|-----1-----2--|--------4-----|--4-----------|
+                B|--------------|-----4--2-----|-----1--2-----|--------------|-----1--1--2--|
+                G|--1--------3--|-----------3--|-----------3--|--------1--1--|--------1-----|
+                D|--------4-----|-----1--1-----|--3--------4--|--4-----3-----|--------4-----|
+                A|--------------|--------1-----|--4-----------|--3-----------|--------------|
+                E|--------------|-----4--------|--2-----------|-----1--------|--------------|
+                
+                e|--1--4--------|-----------1--|--2-----------|--------4-----|--1--2-----4--|
+                B|--------------|--------------|--------------|-----------2--|--4-----------|
+                G|--3--1--------|-----------3--|--------3-----|--1-----1-----|-----------1--|
+                D|--------------|-----1--------|--------------|--1--3--------|--4--1-----4--|
+                A|-----1--------|--3-----------|--3-----------|--1--3--3-----|--1-----------|
+                E|-----2--4-----|-----------1--|--2-----------|--2--1--------|-----------4--|
+                
+                e|-----------1--|
+                B|-----------1--|
+                G|--------------|
+                D|--------------|
+                A|--3-----------|
+                E|-----4--------|
+              </pre>
+              <img src="assets/arrow.png" alt="arrow" style="max-width: 200px;">
+              <p>
+                [[1, 79], [60, 1, 99], [21, 1], [99], [2, 80, 99], [21], [20, 41], [2, 39], [60, 99], [2, 60, 39, 77, 99], [80, 39], [97], [41], [79], [80]]
+                [[39], [2], [2, 61], [41, 1], [23, 58, 99], [58, 77, 21], [41, 1], [60, 80, 97], [1, 20], [21], [61, 41, 2], [79, 61], [96], [39, 4, 60], [39], [4], [20], [39, 20, 61], [21]]
+                [[1, 41], [4, 39, 77, 97], [99], [79], [58], [41, 1, 96], [2, 79, 97], [41], [39, 77, 58, 97], [60, 79, 96], [79, 4, 39], [21], [61, 77, 1, 23], [2, 58], [39, 61, 4, 99]]
+              </p>
+            </div>
+            <p>As is clearly understood from the illustration given above, 
+              I have written a deciphering program that converts ASCII tablatures to point indexes showcased in the previous update.</p>
         </article>
       </article>
     </section>
@@ -141,9 +180,9 @@
 
   <footer>
     <p>Contact me. Please write in <b>English</b>, <b>German</b> or <b>Turkish</b> and refrain from using any other language.</p>
-    <a href="https://github.com/Di0n-0" target="_blank">GitHub</a>
-    <a href="https://www.youtube.com/channel/UCHlha6_457IQepxFi6WuS0w" target="_blank">YouTube</a>
-    <a href="mailto:di0nderentwickler@gmail.com">di0nderentwickler@gmail.com</a>
+    <a href="https://github.com/Di0n-0" target="_blank" style="color: white;">GitHub</a>
+    <a href="https://www.youtube.com/channel/UCHlha6_457IQepxFi6WuS0w" target="_blank" style="color: white;">YouTube</a>
+    <a href="mailto:di0nderentwickler@gmail.com" style="color: white;">di0nderentwickler@gmail.com</a>
   </footer>
 </body>
 </html>

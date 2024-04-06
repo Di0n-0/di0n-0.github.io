@@ -4,7 +4,8 @@ html{
 
 body {
   font-family: 'Courier New', Courier, monospace;
-  background-color: #78c0a7;
+  background-color: #2B2A4C;
+  color: #EEE2DE;
   margin: 0;
   padding: 0;
   max-width: 100%;
@@ -12,7 +13,7 @@ body {
 }
 
 header {
-  background-color: #00787f;
+  background-color: #B31312;
   padding: 10px;
 }
 
@@ -24,7 +25,7 @@ nav {
 
 img {
   width: 100%;
-  max-width: 1200px;
+  max-width: 900px;
   height: auto;
   margin: 20px;
 }
@@ -38,19 +39,15 @@ section {
 }
 
 article {
-  background-color: #7c991f;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px
+  background-color: #5D0E41;
+  padding: 40px;
+  border: 5px solid black;
 }
 
 article article {
-  background-color: #f6f6ed;;
-  padding: 20px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 10px
+  background-color: #EEE2DE;
+  color: #000000;
+  padding: 40px;
 }
 
 h1 {
@@ -79,8 +76,8 @@ video {
 }
 
 footer {
-  background-color: #ffba4a;
-  color: #000000;
+  background-color: #A0153E;;
+  color: white;
   padding: 20px;
   text-align: center;
 }
@@ -93,13 +90,4 @@ a {
 
 ul li {
   margin-bottom: 20px;
-}
-
-.feature {
-  display: flex;
-  align-items:flex-start; 
-}
-
-.feature ul {
-  margin-right: 10px;
 }
