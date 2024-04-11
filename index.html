@@ -43,34 +43,41 @@
         <article>
           <article>
             <h2>ARpeggio</h2>
-              <video src="assets/video_arpeggio.mp4" controls style="border: 5px solid black;"></video>
-              <p>Do you find reading sheet music or tablatures a bit daunting?
+              <video src="assets/ARpeggio_latest_update_better.mp4" controls style="border: 5px solid black;"></video>
+              <video src="assets/ARpeggio_mode1.mp4" controls style="border: 5px solid black;"></video>
+              <p>
+                Do you find reading sheet music or tablatures a bit daunting?
                 Well, you're not alone. I'll be honest, I'm not the most consistent player, 
                 and I often go through extended periods without practice. 
                 It can be frustrating to pick up where I left off with reading sheet music or tablatures every time I start playing again. 
-                That's why I developed this program: to tackle this annoyance head-on.</p>
-              <p>Introducing ARpeggio, a Python-based program that I'm considering rewriting in C/C++ before publishing.
+                That's why I developed this program: to tackle this annoyance head-on.
+              </p>
+              <p>
+                Introducing ARpeggio, a Python-based program that I'm considering rewriting in C/C++ before publishing.
                 With the help of AI, it's designed to teach you how to play the guitar.
-                  I've been working on it for almost two months now, and I'm excited to share it with you.</p>
-              <p>ARpeggio is all about making guitar learning more accessible and enjoyable. 
+              </p>
+              <p>
+                ARpeggio is all about making guitar learning more accessible and enjoyable. 
                 No need to worry about deciphering complicated notations. 
                 This program aims to guide you through your guitar journey without relying on traditional sheet music or tablatures.
-                It's like having your very own personal guitar instructor right at your fingertips.</p>
-              <p>I'm proud of the progress I've made with ARpeggio, and I can't wait to bring it to you. 
-                Stay tuned for updates on its development and release on my website.</p>
-            <h3>Features</h3>
-              <div style="display: flex; align-items: flex-start;">
-                <ul>
-                  <li>Option to only display chosen hand indices</li>
-                  <li>Capability to adapt to the rotation of your guitar and to the distance between it and the camera</li>
-                  <li>Capability to process <b>any</b> video and extract its hand landmarks for you to replay on your guitar
-                </ul>
-              </div>
+                It's like having your very own personal guitar instructor right at your fingertips.
+              </p>
+              <p>
+                I'm proud of the progress I've made with ARpeggio, and I can't wait to bring it to you. 
+                Stay tuned for updates on its development and release on my website.
+              </p>
+            <h3>How ARpeggio can benefit you</h3>
+              <p>
+                So far, 2 modes have been developed for the program, they're both showcased above in video format:
+                One extracts the hand movements and landmarks from a video of your submission and then illustrates them on your guitar 
+                and the other reads a guitar tablature of your submission and then highlights/marks the frets you should press and the strings you should pull.
+              </p>
             <h3>Contributing</h3>
               <ul>
                   <h4>If you're a developer who knows Python</h4>
                     <ul>
-                      <li>I have encountered some difficulties in creating an executable.
+                      <li>
+                        I have encountered some difficulties in creating an executable.
                         Initially, I attempted to build it as a Docker image, 
                         but I abandoned that approach due to the complexity of sharing X-Server access, which regular users might find daunting.
                         Furthermore, options like Pyinstaller are not suitable for generating a Windows build since I primarily use Linux.
@@ -80,18 +87,22 @@
                     </ul>
                     <h4>If you're a developer who knows C/C++ and fulfill the requirements outlined in the <a href="https://github.com/cyrusbehr/YOLOv8-TensorRT-CPP"_blank">YOLOv8-TensorRT-CPP</a>repository</h4>
                     <ul>
-                      <li>While a C/C++ integration may not be immediately necessary at this early stage,
+                      <li>
+                        While a C/C++ integration may not be immediately necessary at this early stage,
                         the Python version of the program performs poorly on my machine,
                         achieving a meager 10-12 frames per second (FPS).
-                        Introducing a C/C++ integration could potentially resolve this issue.</li>
+                        Introducing a C/C++ integration could potentially resolve this issue.
+                      </li>
                     </ul>
                     <h4>If you're a developer who wishes to port this program to another language such as Java or JavaScript</h4>
                     <ul>
-                        <li>Your altruism is truly commendable!
+                        <li>
+                          Your altruism is truly commendable!
                           I've had a strong desire to produce an Android and web version of the program for a long time now,
                           but my experience with Java is extremely limited, 
                           and I possess no knowledge of JavaScript. 
-                          As a result, you would need to take the lead in this endeavor.</li>
+                          As a result, you would need to take the lead in this endeavor.
+                        </li>
                     </ul>
               </ul>
           </article>
@@ -104,32 +115,39 @@
         <article>
           <h2>ARpeggio</h2>
           <h2>1/3/2024</h2>
-            <p>Although I was preoccupied with school, I managed to make some progress on ARpeggio. 
+            <p>
+              Although I was preoccupied with school, I managed to make some progress on ARpeggio. 
               Admittedly, it did take me quite some time, as the moments I could dedicate to it were scarce and fleeting, akin to breadcrumbs. 
               This made it challenging to maintain a consistent focus on the project. 
-              Without further ado, allow me to present my vision for ARpeggio, along with the progress I have made thus far and the features I intend to incorporate into the program.</p>
+              Without further ado, allow me to present my vision for ARpeggio, along with the progress I have made thus far and the features I intend to incorporate into the program.
+            </p>
             <h3>My Vision</h3>
-              <p>In its current state, ARpeggio only allows users to practice pieces that can be analyzed from a video. 
+              <p>
+                In its current state, ARpeggio only allows users to practice pieces that can be analyzed from a video. 
                 However, I aim to enhance the program's capabilities by enabling it to convert guitar tablatures into training data. 
                 To achieve this, there are two crucial aspects that need to be addressed. 
                 Firstly, the program must possess knowledge of every note on the guitar and their corresponding fret positions. 
                 Secondly, it must be equipped with the ability to interpret tablatures and generate the necessary training data. 
                 I have made progress in the first aspect by ensuring that the program is aware of all the possible fret positions associated with different notes. 
-                However, I have yet to establish the linkage between these positions and their corresponding musical notes.</p>
+                However, I have yet to establish the linkage between these positions and their corresponding musical notes.
+              </p>
             <h3>Mapping The Strings and Frets</h3>
               <div style="display: flex; align-items: flex-start; justify-content: center;">
-                <p>Although it is not yet fully complete, I have successfully mapped the strings and frets of the guitar using the principles of analytical geometry 
+                <p>
+                  Although it is not yet fully complete, I have successfully mapped the strings and frets of the guitar using the principles of analytical geometry 
                   (a heartfelt thank you to Descartes). 
                   This mapping allows us to determine the approximate locations where specific notes should be played. 
                   However, I have yet to implement a one-to-one correspondence between these approximate positions and the corresponding musical notes.
-                  The vidoes on which I conduct the tests of my program belong to <a href="https://www.youtube.com/@ishidagi648"_blank"><b>Tadashi Ishida</b></a>.</p>
+                  The vidoes on which I conducted the tests of my program belong to <a href="https://www.youtube.com/@ishidagi648"_blank"><b>Tadashi Ishida</b></a>.
+                </p>
                   <img src="assets/descartes.jpg" alt="Descartes" style="border: 5px solid black; max-width: 450px;">
                 </div>
                 <div style="display: flex; justify-content: center;">
                   <img src="assets/combined_image.png" alt="Mapping The Strings And Frets" style="border: 5px solid black; max-width: 900px;">
                 </div>
           <h2>6/4/2024</h2>
-            <p>Again, I was only able to continue the development of the project after a month because of school and other academic affairs. 
+            <p>
+              Again, I was only able to continue the development of the project after a month because of school and other academic affairs. 
               However, I've managed to make progress despite all of these constraints. The project is nearing its final phases, 
               and I hope to be able to complete it sometime this summer. Anyway, here's what I have been working on in the last couple of days.
             </p>
@@ -171,8 +189,16 @@
                 [[1, 41], [4, 39, 77, 97], [99], [79], [58], [41, 1, 96], [2, 79, 97], [41], [39, 77, 58, 97], [60, 79, 96], [79, 4, 39], [21], [61, 77, 1, 23], [2, 58], [39, 61, 4, 99]]
               </p>
             </div>
-            <p>As is clearly understood from the illustration given above, 
-              I have written a deciphering program that converts ASCII tablatures to point indexes showcased in the previous update.</p>
+            <p>
+              As is clearly understood from the illustration given above, 
+              I have written a deciphering program that converts ASCII tablatures to point indexes showcased in the previous update.
+            </p>
+          <h2>11/4/2024</h2>
+            <p>
+              A couple of  days earlier, I successfully managed to illustrate the deciphered tablature data on the fretboard. 
+              As the video footage I used whilst testing my program belongs to <a href="https://www.youtube.com/@Per-Olovkindgren"_blank"><b>Per-Olov Kindgren</b></a> I contacted him regarding the use of his footage for my program's showcasing purposes, 
+              and he kindly allowed me to use his footage. I've included said video in ARpeggio's main project section.
+            </p>
         </article>
       </article>
     </section>
