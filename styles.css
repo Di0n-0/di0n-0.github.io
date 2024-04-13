@@ -3,11 +3,11 @@ html{
 }
 
 body {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
   background-color: #2B2A4C;
   color: #EEE2DE;
-  margin: 0;
-  padding: 0;
   max-width: 100%;
   overflow-x: hidden;
 }
@@ -40,32 +40,33 @@ section {
 
 article {
   background-color: #5D0E41;
-  padding: 40px;
+  padding: 20px;
   border: 5px solid black;
 }
 
 article article {
   background-color: #EEE2DE;
+  border: 5px solid black;
   color: #000000;
-  padding: 40px;
 }
 
 h1 {
-  font-size: 24px;
+  font-size:xx-large;
   margin-bottom: 10px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size:x-large;
   margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
+  font-size:larger;
+  margin-bottom: 10px;
 }
 
 p {
+  font-size:large;
   line-height: 1.5;
   margin-bottom: 20px;
 }
