@@ -118,39 +118,45 @@
       <article>
         <h1>ARpeggio</h1>
         <article>
-          <h2>1/3/2024</h2>
+          <h2>29/4/2024</h2>
             <p>
-              Although I was preoccupied with school, I managed to make some progress on ARpeggio. 
-              Admittedly, it did take me quite some time, as the moments I could dedicate to it were scarce and fleeting, akin to breadcrumbs. 
-              This made it challenging to maintain a consistent focus on the project. 
-              Without further ado, allow me to present my vision for ARpeggio, along with the progress I have made thus far and the features I intend to incorporate into the program.
+              Hi, I've managed to solve quite a bit of problems concerning the fluctuations which were happening when segmenting the fretboard. 
+              Turns out running object detection models before the segmentation model in order to reduce the area of interest was not contributing to the program being more efficient, 
+              contrary to my belief. 
             </p>
-            <h3>My Vision</h3>
-              <p>
-                In its current state, ARpeggio only allows users to practice pieces that can be analyzed from a video. 
-                However, I aim to enhance the program's capabilities by enabling it to convert guitar tablatures into training data. 
-                To achieve this, there are two crucial aspects that need to be addressed. 
-                Firstly, the program must possess knowledge of every note on the guitar and their corresponding fret positions. 
-                Secondly, it must be equipped with the ability to interpret tablatures and generate the necessary training data. 
-                I have made progress in the first aspect by ensuring that the program is aware of all the possible fret positions associated with different notes. 
-                However, I have yet to establish the linkage between these positions and their corresponding musical notes.
-              </p>
-            <h3>Mapping The Strings and Frets</h3>
-              <div style="display: flex; align-items: flex-start; justify-content: center;">
-                <p>
-                  Although it is not yet fully complete, I have successfully mapped the strings and frets of the guitar using the principles of analytical geometry 
-                  (a heartfelt thank you to Descartes). 
-                  This mapping allows us to determine the approximate locations where specific notes should be played. 
-                  However, I have yet to implement a one-to-one correspondence between these approximate positions and the corresponding musical notes.
-                  The vidoes on which I conducted the tests of my program belong to <a href="https://www.youtube.com/@ishidagi648"_blank"><b>Tadashi Ishida</b></a>.
-                </p>
-                  <img src="assets/descartes.jpg" alt="Descartes" style="border: 5px solid #A0153E; max-width: 450px;">
-                </div>
-                <div style="display: flex; justify-content: center;">
-                  <img src="assets/combined_image.png" alt="Mapping The Strings And Frets" style="border: 5px solid #A0153E; max-width: 900px;">
-                </div>
-          </article>
-          <article>
+            <p>
+              Anyway, I've also added a demo video on ARpeggio's main project page recorded with live video footage of myself, 
+              which should represent how a real user would utilize the program.
+            </p>
+        </article>
+        <article>
+          <h2>22/4/2024</h2>
+            <p>
+              Hi, There's been no major updates since the last one. I just wanted to announce that I'll be discontinuing support for ARpeggio's hand landmark mode. 
+              I don't think it's really useful at all, and wasn't even my intention with the program to begin with. 
+              The further versions of ARpeggio will only feature the TAB decipher mode. Concerning the code repository, 
+              I will probably make two branches, one being legacy and the other being master. 
+            </p>
+            <p>
+              Apart from that, I'll also be publishing a video on my YouTube channel in which I explain the mathematical properties of ARpeggio sometime in the future.
+            </p>
+        </article>
+        <article>
+          <h2>11/4/2024</h2>
+            <p>
+              A couple of  days earlier, I successfully managed to illustrate the deciphered tablature data on the fretboard. 
+              As the video footage I used whilst testing my program belongs to <a href="https://www.youtube.com/@Per-Olovkindgren"_blank"><b>Per-Olov Kindgren</b></a> I contacted him regarding the use of his footage for my program's showcasing purposes, 
+              and he kindly allowed me to use his footage. I've included said video below:
+
+              <div style="position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 20px;">
+                <iframe src="https://www.youtube.com/embed/Hi0PP6A9loQ?autoplay=1&mute=1&loop=1&playlist=Hi0PP6A9loQ&rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 5px solid #A0153E;" allowfullscreen></iframe>
+              </div>
+              <div style="position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 20px;">
+                <iframe src="https://www.youtube.com/embed/rqIyp7hYiUY?autoplay=1&mute=1&loop=1&playlist=rqIyp7hYiUY&rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 5px solid #A0153E;" allowfullscreen></iframe>
+              </div>
+            </p>
+        </article>
+        <article>
           <h2>6/4/2024</h2>
             <p>
               Again, I was only able to continue the development of the project after a month because of school and other academic affairs. 
@@ -206,45 +212,39 @@
               As it is clearly understood from the illustration given above, 
               I have written a deciphering program that converts ASCII tablatures to point indexes showcased in the previous update.
             </p>
-          </article>
-        <article>
-          <h2>11/4/2024</h2>
-            <p>
-              A couple of  days earlier, I successfully managed to illustrate the deciphered tablature data on the fretboard. 
-              As the video footage I used whilst testing my program belongs to <a href="https://www.youtube.com/@Per-Olovkindgren"_blank"><b>Per-Olov Kindgren</b></a> I contacted him regarding the use of his footage for my program's showcasing purposes, 
-              and he kindly allowed me to use his footage. I've included said video below:
-
-              <div style="position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 20px;">
-                <iframe src="https://www.youtube.com/embed/Hi0PP6A9loQ?autoplay=1&mute=1&loop=1&playlist=Hi0PP6A9loQ&rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 5px solid #A0153E;" allowfullscreen></iframe>
-              </div>
-              <div style="position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 20px;">
-                <iframe src="https://www.youtube.com/embed/rqIyp7hYiUY?autoplay=1&mute=1&loop=1&playlist=rqIyp7hYiUY&rel=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 5px solid #A0153E;" allowfullscreen></iframe>
-              </div>
-            </p>
         </article>
         <article>
-          <h2>22/4/2024</h2>
+          <h2>1/3/2024</h2>
             <p>
-              Hi, There's been no major updates since the last one. I just wanted to announce that I'll be discontinuing support for ARpeggio's hand landmark mode. 
-              I don't think it's really useful at all, and wasn't even my intention with the program to begin with. 
-              The further versions of ARpeggio will only feature the TAB decipher mode. Concerning the code repository, 
-              I will probably make two branches, one being legacy and the other being master. 
+              Although I was preoccupied with school, I managed to make some progress on ARpeggio. 
+              Admittedly, it did take me quite some time, as the moments I could dedicate to it were scarce and fleeting, akin to breadcrumbs. 
+              This made it challenging to maintain a consistent focus on the project. 
+              Without further ado, allow me to present my vision for ARpeggio, along with the progress I have made thus far and the features I intend to incorporate into the program.
             </p>
-            <p>
-              Apart from that, I'll also be publishing a video on my YouTube channel in which I explain the mathematical properties of ARpeggio sometime in the future.
-            </p>
-        </article>
-        <article>
-          <h2>29/4/2024</h2>
-            <p>
-              Hi, I've managed to solve quite a bit of problems concerning the fluctuations which were happening when segmenting the fretboard. 
-              Turns out running object detection models before the segmentation model in order to reduce the area of interest was not contributing to the program being more efficient, 
-              contrary to my belief. 
-            </p>
-            <p>
-              Anyway, I've also added a demo video on ARpeggio's main project page recorded with live video footage of myself, 
-              which should represent how a real user would utilize the program.
-            </p>
+            <h3>My Vision</h3>
+              <p>
+                In its current state, ARpeggio only allows users to practice pieces that can be analyzed from a video. 
+                However, I aim to enhance the program's capabilities by enabling it to convert guitar tablatures into training data. 
+                To achieve this, there are two crucial aspects that need to be addressed. 
+                Firstly, the program must possess knowledge of every note on the guitar and their corresponding fret positions. 
+                Secondly, it must be equipped with the ability to interpret tablatures and generate the necessary training data. 
+                I have made progress in the first aspect by ensuring that the program is aware of all the possible fret positions associated with different notes. 
+                However, I have yet to establish the linkage between these positions and their corresponding musical notes.
+              </p>
+            <h3>Mapping The Strings and Frets</h3>
+              <div style="display: flex; align-items: flex-start; justify-content: center;">
+                <p>
+                  Although it is not yet fully complete, I have successfully mapped the strings and frets of the guitar using the principles of analytical geometry 
+                  (a heartfelt thank you to Descartes). 
+                  This mapping allows us to determine the approximate locations where specific notes should be played. 
+                  However, I have yet to implement a one-to-one correspondence between these approximate positions and the corresponding musical notes.
+                  The vidoes on which I conducted the tests of my program belong to <a href="https://www.youtube.com/@ishidagi648"_blank"><b>Tadashi Ishida</b></a>.
+                </p>
+                  <img src="assets/descartes.jpg" alt="Descartes" style="border: 5px solid #A0153E; max-width: 450px;">
+                </div>
+                <div style="display: flex; justify-content: center;">
+                  <img src="assets/combined_image.png" alt="Mapping The Strings And Frets" style="border: 5px solid #A0153E; max-width: 900px;">
+              </div>
         </article>
       </article>
     </section>
